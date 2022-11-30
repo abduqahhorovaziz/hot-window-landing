@@ -13,3 +13,12 @@ let swiper = new Swiper(".mySwiper", {
     },
   },
 });
+
+let swiperGrid = new Swiper(".gridSwiper", {
+  slidesPerView: 3,
+  spaceBetween: 30,
+  pagination: {
+    el: ".swiper-pagination",
+    clickable: true,
+  },
+});
