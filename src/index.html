@@ -1,0 +1,913 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <!-- <meta name="viewport" content="width=device-width, initial-scale=1.0" /> -->
+  <title>Hot window</title>
+  <link rel="stylesheet" href="../dist/tailwind.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,300;0,400;0,500;0,700;0,900;1,400;1,700&display=swap"
+    rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
+    integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.css" />
+</head>
+
+<body>
+
+  <header>
+    <div class="container mx-auto">
+
+      <div class="flex items-center py-[30px]">
+        <div class="font-roboto text-[18px] leading-6 text-[#2D2D2D]">
+          СЛУЖБА РЕМОНТА НА ПРОЛЕТАРСКОЙ
+        </div>
+
+        <div class="flex items-center ml-auto mr-[47px]">
+          <div class="mr-[5px]">
+            <img src="./assets/img/icons/location.svg" alt="location">
+          </div>
+          <p class="text-[16px] leading-4 text-[#6F6F6F] font-roboto">Работаем по Томску, <br>
+            Северску и области</p>
+        </div>
+
+        <button
+          class="px-[27px] py-[14px] font-roboto text-[16px] leading-4 text-[#25CF43] flex items-center border border-[#25CF43] rounded-full hover:bg-[#25CF43] hover:text-white duration-150 ease-in active:bg-[#11a42c] mr-[47px]">
+          <i class="fa-brands fa-whatsapp mr-[7px] text-[18px]"></i>
+          Написать в Whatsapp
+        </button>
+
+        <div class="flex items-center font-roboto">
+          <img src="./assets/img/icons/phone.svg" class="mr-2" alt="phone">
+          <h2 class="font-black text-[24px] leading-6 text-[#484848]">8 (3822) 50-05-12</h2>
+        </div>
+      </div>
+
+      <nav class="flex items-center justify-between font-roboto py-[16px]">
+        <div>
+          <img src="./assets/img/logo.svg" alt="logo">
+        </div>
+        <ul class="flex gap-x-[32px]">
+          <li class="text-[18px] leading-[24px] hover:text-[#2F6DCE] duration-200 ease-in"><a href="#">Подарок от
+              ПРОФИ</a></li>
+          <span class="block w-[1px] h-6 bg-[#999999]"></span>
+          <li class="text-[18px] leading-[24px] hover:text-[#2F6DCE] duration-200 ease-in"><a href="#">Наши
+              СпецЗаказы</a></li>
+          <span class="block w-[1px] h-6 bg-[#999999]"></span>
+          <li class="text-[18px] leading-[24px] hover:text-[#2F6DCE] duration-200 ease-in"><a href="#">О компании</a>
+          </li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section>
+      <div class="container mx-auto flex items-center justify-between">
+
+        <div class="max-w-[691px]">
+          <h1 class="font-roboto font-black text-[84px] leading-[100%] text-[#2F6DCE] mb-[20px]">СЕЗОНКА ДЛЯ ОКОН 2020
+          </h1>
+          <h3 class="font-roboto font-black text-[32px] leading-[40px] text-[#2D2D2D]">ХОРОША ЗИМА, КОГДА ТЕПЛО У ОКНА!
+          </h3>
+          <p class="max-w-[455px] font-roboto font-medium text-[24px] leading-[28px] text-[#484848] mb-[60px]">
+            Профессиональные услуги по
+            ремонту и обслуживанию окон</p>
+          <div>
+            <button
+              class="px-[53px] py-[24px] font-roboto text-[22px] leading-[100%] text-[#2F6DCE] border border-[#2F6DCE] rounded-full hover:bg-[#2F6DCE] hover:text-white duration-150 ease-in active:bg-[#224f98] mb-[18px]">
+              КАЛЬКУЛЯТОР УСЛУГ
+            </button>
+            <p class="max-w-[305px] text-center font-roboto text-[16px] leading-4 text-[#484848]">Рассчитаем стоимость
+              услуг за 5 минут! подарим скидку или подарок!</p>
+          </div>
+        </div>
+
+        <div class="relative">
+          <div>
+            <img src="./assets/img/window.png" alt="window">
+          </div>
+
+          <div class="absolute top-[20%] left-0">
+
+            <div
+              class="cursor-pointer group relative overflow-hidden py-[30px] px-[62px] flex items-center bg-[#ffffffab] shadow-header-custom backdrop-blur-[7.5px] rounded-md hover:bg-[#2F6DCE] hover:text-white duration-150 ease-in">
+              <div
+                class="w-[54px] h-[54px] absolute left-[-28px] rounded-[9px] bg-[#2F6DCE] rotate-45 flex items-center justify-center">
+                <div class="p-1 bg-white rounded-md left-[-20px]">
+                  <div
+                    class="w-[22px] h-[22px] bg-[#2F6DCE] rounded-[5px] shadow-element-shadow group-hover:bg-[#FF3939] duration-150 ease-in">
+                  </div>
+                </div>
+              </div>
+              <p class="font-roboto text-[24px] leading-6">ЗИМНИЙ РЕЖИМ ДЛЯ ОКОН</p>
+            </div>
+
+            <div
+              class="cursor-pointer mt-[12px] group relative overflow-hidden py-[30px] px-[62px] flex items-center bg-[#ffffffab] shadow-header-custom backdrop-blur-[7.5px] rounded-md hover:bg-[#2F6DCE] hover:text-white duration-150 ease-in">
+              <div
+                class="w-[54px] h-[54px] absolute left-[-28px] rounded-[9px] bg-[#2F6DCE] rotate-45 flex items-center justify-center">
+                <div class="p-1 bg-white rounded-md left-[-20px]">
+                  <div
+                    class="w-[22px] h-[22px] bg-[#2F6DCE] rounded-[5px] shadow-element-shadow group-hover:bg-[#FF3939] duration-150 ease-in">
+                  </div>
+                </div>
+              </div>
+              <p class="font-roboto text-[24px] leading-6">БОЛЬШАЯ РЕГУЛИРОВКА ОКОН</p>
+            </div>
+
+            <div
+              class="cursor-pointer mt-[12px] group relative overflow-hidden py-[30px] px-[62px] flex items-center bg-[#ffffffab] shadow-header-custom backdrop-blur-[7.5px] rounded-md hover:bg-[#2F6DCE] hover:text-white duration-150 ease-in">
+              <div
+                class="w-[54px] h-[54px] absolute left-[-28px] rounded-[9px] bg-[#2F6DCE] rotate-45 flex items-center justify-center">
+                <div class="p-1 bg-white rounded-md left-[-20px]">
+                  <div
+                    class="w-[22px] h-[22px] bg-[#2F6DCE] rounded-[5px] shadow-element-shadow group-hover:bg-[#FF3939] duration-150 ease-in">
+                  </div>
+                </div>
+              </div>
+              <p class="font-roboto text-[24px] leading-6">КОМПЛЕКСНАЯ ПОДГОТОВКА</p>
+            </div>
+
+            <div
+              class="cursor-pointer mt-[12px] group relative overflow-hidden py-[30px] px-[62px] flex items-center bg-[#ffffffab] shadow-header-custom backdrop-blur-[7.5px] rounded-md hover:bg-[#2F6DCE] hover:text-white duration-150 ease-in">
+              <div
+                class="w-[54px] h-[54px] absolute left-[-28px] rounded-[9px] bg-[#2F6DCE] rotate-45 flex items-center justify-center">
+                <div class="p-1 bg-white rounded-md left-[-20px]">
+                  <div
+                    class="w-[22px] h-[22px] bg-[#2F6DCE] rounded-[5px] shadow-element-shadow group-hover:bg-[#FF3939] duration-150 ease-in">
+                  </div>
+                </div>
+              </div>
+              <p class="font-roboto text-[24px] leading-6">ПРИТОЧНЫЕ КЛАПАНЫ AIR-BOX</p>
+            </div>
+
+
+
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <section>
+      <div class="container mx-auto">
+
+        <div class="w-[928px] py-[8px] pl-[30px] bg-[#2F6DCE] rounded-md mb-[56px]">
+          <h3 class="font-black text-[32px] leading-[40px] text-white">ВКЛЮЧАЕМ ЗИМНИЙ РЕЖИМ ПО НИЗКОЙ ЦЕНЕ! </h3>
+        </div>
+
+        <div class="flex">
+
+          <div class="mr-[78px]">
+
+            <div class="w-[333px] pt-[28px] px-[18px] pb-[20px] bg-[#E8F6FF] rounded-md font-roboto mb-[18px]">
+              <h5 class="font-black text-[24px] leading-6 text-[#2D2D2D] text-center mb-[20px]">Что входит в услугу?
+              </h5>
+              <ul>
+                <li class="flex items-start text-[16px] leading-6 text-[#2d2d2d]">
+                  <img src="./assets/img/icons/success.svg" class="mr-[7px] mt-[4px]" alt="success">Очистка уплотнителя
+                  от <br>
+                  загрязнений и смазка
+                  силиконом;
+                </li>
+                <li class="flex items-start text-[16px] leading-6 text-[#2d2d2d]">
+                  <img src="./assets/img/icons/success.svg" class="mr-[7px] mt-[4px]" alt="success">Усиление прижима;
+                </li>
+                <li class="flex items-start text-[16px] leading-6 text-[#2d2d2d]">
+                  <img src="./assets/img/icons/success.svg" class="mr-[7px] mt-[4px]" alt="success">Смазка и протяжка
+                  фурнитуры;
+                </li>
+                <li class="flex items-start text-[16px] leading-6 text-[#2d2d2d]">
+                  <img src="./assets/img/icons/success.svg" class="mr-[7px] mt-[4px]" alt="success">Гарантия:
+                  отсутствует.
+                </li>
+              </ul>
+            </div>
+
+            <div
+              class="w-[333px] pt-[28px] px-[18px] pb-[20px] border-[6px] border-[#2F6DCE] rounded-md font-roboto mb-[18px]">
+              <h5 class="font-black text-[24px] leading-6 text-[#2D2D2D] text-center mb-[20px]">Сколько стоит?
+              </h5>
+              <ul>
+                <li class="flex items-center text-[16px] leading-6 text-[#484848]"><img
+                    src="./assets/img/icons/check.svg" class="mr-[6px]" alt="success">Форточка (S&#10094;0,5 м2.): 250
+                  руб.</li>
+                <li class="flex items-start text-[16px] leading-6 text-[#484848]"><img
+                    src="./assets/img/icons/check.svg" class="mt-[5px] mr-[6px]" alt="success">Оконная створка
+                  (0,5&#10094;S&#10094;1 м2): <br>
+                  350 руб.
+                </li>
+                <li class="flex items-center text-[16px] leading-6 text-[#484848]"><img
+                    src="./assets/img/icons/check.svg" class="mr-[6px]" alt="success">Балконная дверь: 450 руб.</li>
+              </ul>
+            </div>
+          </div>
+
+          <div>
+            <h5 class="font-black text-[24px] leading-6 mb-[18px] font-roboto">Что Вы получите в итоге?</h5>
+            <ul class="font-roboto text-[18px] leading-6 text-[#2d2d2d] mb-[34px]">
+              <li>
+                • после смазки фурнитуры: бесшумная и легкая работа фурнитуры, увеличение срока службы;
+              </li>
+              <li>
+                • после обработки уплотнителя: повышение эластичности и долговечности уплотнителя, уплотнитель не
+                примерзает к пластику, более плотное прилегание уплотнителя повышает герметичность;
+              </li>
+              <li>
+                • после усиления прижима: уменьшение продуваний, повышение шумоизоляции;
+              </li>
+              <li>• общий результат: повышение срока.</li>
+            </ul>
+
+            <div class="flex items-start mb-[39px]">
+              <div class="mr-[6px] text-sm text-[#E05C5C]">
+                <i class="fa-solid fa-triangle-exclamation"></i>
+              </div>
+              <p class="font-roboto text-[14px] leading-[20px] text-justify text-[#E05C5C]">
+                Внимание! Данная услуга подходит для створок с полностью исправной фурнитурой и уплотнителем, и не
+                устраняет дефекты в работе фурнитуры. Если в работе створок есть какие-то дефекты, то необходимо
+                проводить Большую Регулировку.
+              </p>
+            </div>
+
+            <div class="text-center font-roboto">
+              <button
+                class="px-[51px] py-[24px] rounded-full text-[22px] leading-[100%] text-white uppercase hover:shadow-button-shadow duration-200 ease-out mb-[18px]"
+                style="background: linear-gradient(180deg, rgba(255, 255, 255, 0.3) 0%, rgba(255, 255, 255, 0) 100%), #005AE9;;">выезд
+                мастера</button>
+              <p class="font-light text-[12px] leading-[18px]">*Диагностика бесплатно (при условии проведения работ).
+                <br>
+                Выезд в пригород и удаленные районы оплачиваются по тарифам организации.
+              </p>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <section class="py-[77px]">
+      <div class="container mx-auto">
+        <div class="w-full min-h-[435px] bg-[#f9f9f9] rounded-md pt-[50px] pb-[54px] font-roboto">
+          <h2 class="mb-[33px] text-center text-[32px] leading-[48px] font-black uppercase text-[#2F6DCE]">Вместе с
+            Зимником
+            дешевле!</h2>
+          <div class="swiper mySwiper">
+            <div class="swiper-wrapper">
+
+              <div class="swiper-slide" style="height: 250px;">
+                <div class="w-[842px] h-[176px] rounded-md mx-auto flex shadow-sales-shadow">
+                  <div class="bg-[#FF3939] rounded-l-md flex items-center justify-center text-[#2D2D2D]">
+                    <p class="rotate-[-90deg] font-black text-[32px] leading-[48px]">-10%</p>
+                  </div>
+                  <div class="w-[603px] flex items-center bg-white pl-12">
+                    <div class="mr-[42px]">
+                      <img src="./assets/img/slider-1/slide-1.png" alt="slide">
+                    </div>
+                    <h4 class="font-black text-[27px] leading-[32px] text-[#2D2D2D]">При обслуживании <span
+                        class="text-[#2F6DCE]">4х</span> <br>
+                      и более створок скидка</h4>
+                  </div>
+                  <div
+                    class="w-[171px] bg-[#2F6DCE] rounded-r-md flex flex-col justify-center items-center text-center text-white pl-[26px] pr-[20px]">
+                    <!-- <p class="text-[16px] leading-[100%] mb-[20px]">700 руб – 20% = </p> -->
+                    <h5 class="font-black text-[65px] leading-[76px]">-10<span class="text-[35px]">%</span></h5>
+                  </div>
+                </div>
+              </div>
+
+              <div class="swiper-slide" style="height: 250px;">
+                <div class="w-[842px] h-[176px] rounded-md mx-auto flex shadow-sales-shadow">
+                  <div class="bg-[#FF3939] rounded-l-md flex items-center justify-center text-[#2D2D2D]">
+                    <p class="rotate-[-90deg] font-black text-[32px] leading-[48px]">-15%</p>
+                  </div>
+                  <div class="w-[603px] flex items-center bg-white pl-12 pr-3">
+                    <div class="mr-[42px]">
+                      <img src="./assets/img/slider-1/slide-2.png" alt="slide">
+                    </div>
+                    <h4 class="font-black text-[26px] leading-[32px] text-[#2D2D2D]">Гребенка для фиксации <br>
+                      приоткрытой створки</h4>
+                  </div>
+                  <div
+                    class="w-[171px] bg-[#2F6DCE] rounded-r-md flex flex-col justify-center text-center text-white pl-[19px] pr-[20px]">
+                    <p class="text-[16px] leading-[100%] mb-[20px]">350 руб – 15% = </p>
+                    <h5 class="font-black text-[42px] leading-6">297 <span class="text-[24px]">руб!</span></h5>
+                  </div>
+                </div>
+              </div>
+
+              <div class="swiper-slide" style="height: 250px;">
+                <div class="w-[842px] h-[176px] rounded-md mx-auto flex shadow-sales-shadow">
+                  <div class="bg-[#FF3939] rounded-l-md flex items-center justify-center text-[#2D2D2D]">
+                    <p class="rotate-[-90deg] font-black text-[32px] leading-[48px]">-20%</p>
+                  </div>
+                  <div class="w-[603px] flex items-center bg-white pl-12 pr-[124px]">
+                    <div class="mr-[42px]">
+                      <img src="./assets/img/slider-1/slide-3.png" alt="slide">
+                    </div>
+                    <h4 class="font-black text-[32px] leading-[40px] text-[#2D2D2D]">Детские <br> блокираторы</h4>
+                  </div>
+                  <div
+                    class="w-[171px] bg-[#2F6DCE] rounded-r-md flex flex-col justify-center text-center text-white pl-[14px] pr-[20px]">
+                    <p class="text-[16px] leading-[100%] mb-[20px]">700 руб – 20% = </p>
+                    <h5 class="font-black text-[42px] leading-6">560 <span class="text-[24px]">руб!</span></h5>
+                  </div>
+                </div>
+              </div>
+
+              <div class="swiper-slide" style="height: 250px;">
+                <div class="w-[842px] h-[176px] rounded-md mx-auto flex shadow-sales-shadow">
+                  <div class="bg-[#FF3939] rounded-l-md flex items-center justify-center text-[#2D2D2D]">
+                    <p class="rotate-[-90deg] font-black text-[32px] leading-[48px]">-30%</p>
+                  </div>
+                  <div class="w-[603px] flex items-center bg-white pl-12 pr-[10px]">
+                    <div class="mr-[42px]">
+                      <img src="./assets/img/slider-1/slide-4.png" alt="slide">
+                    </div>
+                    <h4 class="font-black text-[27px] leading-[32px] text-[#2D2D2D]">Заглушка паза <br> штапика в нижнюю
+                      раму</h4>
+                  </div>
+                  <div
+                    class="w-[171px] bg-[#2F6DCE] rounded-r-md flex flex-col justify-center text-center text-white pl-[19px] pr-[20px]">
+                    <p class="text-[16px] leading-[100%] mb-[20px]">150 руб – 30% = </p>
+                    <h5 class="font-black text-[42px] leading-6">100 <span class="text-[24px]">руб!</span></h5>
+                  </div>
+                </div>
+              </div>
+
+            </div>
+
+            <!-- <div class="swiper-pagination"></div> -->
+
+            <div class="font-roboto w-full flex pb-[50px]">
+              <div class="flex gap-x-6 mx-auto">
+                <div
+                  class="w-[68px] h-[46px] rounded-md text-white cursor-pointer bg-[#FF3939] border border-transparent hover:bg-[#d22f2f] shadow-paginate-shadow flex items-center justify-center font-bold text-[18px] leading-[21px]">
+                  -10%
+                </div>
+
+                <div
+                  class="w-[68px] h-[46px] rounded-md text-white cursor-pointer bg-[#FF3939] border border-transparent hover:bg-[#d22f2f] shadow-paginate-shadow flex items-center justify-center font-bold text-[18px] leading-[21px]">
+                  -15%
+                </div>
+
+                <div
+                  class="w-[68px] h-[46px] rounded-md text-white cursor-pointer bg-[#FF3939] border border-transparent hover:bg-[#d22f2f] shadow-paginate-shadow flex items-center justify-center font-bold text-[18px] leading-[21px]">
+                  -20%
+                </div>
+
+                <div
+                  class="w-[68px] h-[46px] rounded-md text-white cursor-pointer bg-[#FF3939] border border-transparent hover:bg-[#d22f2f] shadow-paginate-shadow flex items-center justify-center font-bold text-[18px] leading-[21px]">
+                  -35%
+                </div>
+
+              </div>
+
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="py-[90px] bg-[#E8F6FF]">
+      <div class="container mx-auto">
+        <div class="w-[928px] py-[8px] pr-[30px] bg-[#2F6DCE] rounded-md mb-[56px] ml-auto">
+          <h3 class="font-black text-right text-[32px] leading-[40px] text-white uppercase">Большая регулировка окон на
+            зиму</h3>
+        </div>
+        <div class="flex justify-between mb-[60px]">
+
+          <div>
+            <div class="mb-[34px]"><img src="./assets/img/banner.jpg" alt="banner"></div>
+
+            <div class="w-[880px]">
+              <h5 class="font-black text-[24px] leading-6 mb-[18px] font-roboto">Что Вы получите в итоге?</h5>
+              <ul class="font-roboto text-[18px] leading-6 text-[#2d2d2d] mb-[34px]">
+                <li>
+                  • после смазки фурнитуры: бесшумная и легкая работа фурнитуры, увеличение срока службы;
+                </li>
+                <li>
+                  • после обработки уплотнителя: повышение эластичности и долговечности уплотнителя, уплотнитель не
+                  примерзает к пластику, более плотное прилегание уплотнителя повышает герметичность;
+                </li>
+                <li>
+                  • после усиления прижима: уменьшение продуваний, повышение шумоизоляции;
+                </li>
+                <li>• общий результат: повышение срока.</li>
+              </ul>
+
+              <div class="flex items-start mb-[39px]">
+                <div class="mr-[6px] text-sm text-[#E05C5C]">
+                  <i class="fa-solid fa-triangle-exclamation"></i>
+                </div>
+                <p class="font-roboto text-[14px] leading-[20px] text-justify text-[#E05C5C]">
+                  Внимание! Данная услуга подходит для створок с полностью исправной фурнитурой и уплотнителем, и не
+                  устраняет дефекты в работе фурнитуры. Если в работе створок есть какие-то дефекты, то необходимо
+                  проводить Большую Регулировку.
+                </p>
+              </div>
+
+              <div class="text-center font-roboto">
+                <button
+                  class="px-[51px] py-[24px] rounded-full text-[22px] leading-[100%] text-white uppercase hover:shadow-button-shadow duration-200 ease-out mb-[18px]"
+                  style="background: linear-gradient(180deg, rgba(255, 255, 255, 0.3) 0%, rgba(255, 255, 255, 0) 100%), #005AE9;;">выезд
+                  мастера</button>
+                <p class="font-light text-[12px] leading-[18px]">*Диагностика бесплатно (при условии проведения работ).
+                  <br>
+                  Выезд в пригород и удаленные районы оплачиваются по тарифам организации.
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <div>
+            <div>
+              <div
+                class="w-[333px] pt-[28px] px-[18px] pb-[20px] border-2 border-white rounded-md font-roboto mb-[18px]">
+                <h5 class="font-black text-[24px] leading-6 text-[#2D2D2D] text-center mb-[20px]">Что входит в услугу?
+                </h5>
+                <ul>
+                  <li class="flex items-start text-[16px] leading-6 text-[#2d2d2d]">
+                    <img src="./assets/img/icons/success.svg" class="mr-[7px] mt-[4px]" alt="success">Настройка работы
+                    фурнитуры, мелкий ремонт, не требующий снятия створки и замены деталей;
+                  </li>
+                  <li class="flex items-start text-[16px] leading-6 text-[#2d2d2d]">
+                    <img src="./assets/img/icons/success.svg" class="mr-[7px] mt-[4px]" alt="success">Смазка фурнитуры,
+                    протяжка винтов и креплений;
+                  </li>
+                  <li class="flex items-start text-[16px] leading-6 text-[#2d2d2d]">
+                    <img src="./assets/img/icons/success.svg" class="mr-[7px] mt-[4px]" alt="success">
+                    Усиление прижима створки;
+                  </li>
+                  <li class="flex items-start text-[16px] leading-6 text-[#2d2d2d]">
+                    <img src="./assets/img/icons/success.svg" class="mr-[7px] mt-[4px]" alt="success">
+                    Правильная расстановка ответных планок;
+                  </li>
+                  <li class="flex items-start text-[16px] leading-6 text-[#2d2d2d]">
+                    <img src="./assets/img/icons/success.svg" class="mr-[7px] mt-[4px]" alt="success">
+                    Очистка уплотнителя от загрязнений,
+                    смазка уплотнителя силиконом;
+                  </li>
+                  <li class="flex items-start text-[16px] leading-6 text-[#2d2d2d]">
+                    <img src="./assets/img/icons/success.svg" class="mr-[7px] mt-[4px]" alt="success">
+                    Гарантия: 6 месяцев.
+                  </li>
+                </ul>
+              </div>
+
+              <div
+                class="w-[333px] pt-[28px] px-[18px] pb-[20px] border-[6px] border-[#2F6DCE] rounded-md font-roboto mb-[18px]">
+                <h5 class="font-black text-[24px] leading-6 text-[#2D2D2D] text-center mb-[20px]">Сколько стоит?
+                </h5>
+                <ul>
+                  <li class="flex items-start text-[16px] leading-6 text-[#484848]"><img
+                      src="./assets/img/icons/check.svg" class="mt-[5px] mr-[6px]" alt="success">
+                    Окно/форточка (зависит от S) <br> 0,5м²–0,9м²-1,1м² <br>
+                    300–600–700 руб.
+                  </li>
+                  <li class="flex items-start text-[16px] leading-6 text-[#484848]"><img
+                      src="./assets/img/icons/check.svg" class="mt-[5px] mr-[6px]" alt="success">
+                    Балконная дверь (зависит от S) <br> 1,1м² – 1,4 м²-1,7м² <br>
+                    700 – 800 – 950 руб.
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+
+        </div>
+        <div class="w-full min-h-[435px] bg-[#f9f9f9] rounded-md pt-[50px] pb-[54px] font-roboto">
+          <h2 class="mb-[33px] text-center text-[32px] leading-[48px] font-black uppercase text-[#2F6DCE]">Вместе с
+            Зимником
+            дешевле!</h2>
+          <div class="swiper mySwiper">
+            <div class="swiper-wrapper">
+
+              <div class="swiper-slide" style="height: 250px;">
+                <div class="w-[842px] h-[176px] rounded-md mx-auto flex shadow-sales-shadow">
+                  <div class="bg-[#FF3939] rounded-l-md flex items-center justify-center text-[#2D2D2D]">
+                    <p class="rotate-[-90deg] font-black text-[32px] leading-[48px]">-10%</p>
+                  </div>
+                  <div class="w-[603px] flex items-center bg-white pl-12">
+                    <div class="mr-[42px]">
+                      <img src="./assets/img/slider-1/slide-1.png" alt="slide">
+                    </div>
+                    <h4 class="font-black text-[27px] leading-[32px] text-[#2D2D2D]">При обслуживании <span
+                        class="text-[#2F6DCE]">4х</span> <br>
+                      и более створок скидка</h4>
+                  </div>
+                  <div
+                    class="w-[171px] bg-[#2F6DCE] rounded-r-md flex flex-col justify-center items-center text-center text-white pl-[26px] pr-[20px]">
+                    <!-- <p class="text-[16px] leading-[100%] mb-[20px]">700 руб – 20% = </p> -->
+                    <h5 class="font-black text-[65px] leading-[76px]">-10<span class="text-[35px]">%</span></h5>
+                  </div>
+                </div>
+              </div>
+
+              <div class="swiper-slide" style="height: 250px;">
+                <div class="w-[842px] h-[176px] rounded-md mx-auto flex shadow-sales-shadow">
+                  <div class="bg-[#FF3939] rounded-l-md flex items-center justify-center text-[#2D2D2D]">
+                    <p class="rotate-[-90deg] font-black text-[32px] leading-[48px]">-15%</p>
+                  </div>
+                  <div class="w-[603px] flex items-center bg-white pl-12 pr-3">
+                    <div class="mr-[42px]">
+                      <img src="./assets/img/slider-1/slide-2.png" alt="slide">
+                    </div>
+                    <h4 class="font-black text-[26px] leading-[32px] text-[#2D2D2D]">Гребенка для фиксации <br>
+                      приоткрытой створки</h4>
+                  </div>
+                  <div
+                    class="w-[171px] bg-[#2F6DCE] rounded-r-md flex flex-col justify-center text-center text-white pl-[19px] pr-[20px]">
+                    <p class="text-[16px] leading-[100%] mb-[20px]">350 руб – 15% = </p>
+                    <h5 class="font-black text-[42px] leading-6">297 <span class="text-[24px]">руб!</span></h5>
+                  </div>
+                </div>
+              </div>
+
+              <div class="swiper-slide" style="height: 250px;">
+                <div class="w-[842px] h-[176px] rounded-md mx-auto flex shadow-sales-shadow">
+                  <div class="bg-[#FF3939] rounded-l-md flex items-center justify-center text-[#2D2D2D]">
+                    <p class="rotate-[-90deg] font-black text-[32px] leading-[48px]">-20%</p>
+                  </div>
+                  <div class="w-[603px] flex items-center bg-white pl-12 pr-[124px]">
+                    <div class="mr-[42px]">
+                      <img src="./assets/img/slider-1/slide-3.png" alt="slide">
+                    </div>
+                    <h4 class="font-black text-[32px] leading-[40px] text-[#2D2D2D]">Детские <br> блокираторы</h4>
+                  </div>
+                  <div
+                    class="w-[171px] bg-[#2F6DCE] rounded-r-md flex flex-col justify-center text-center text-white pl-[14px] pr-[20px]">
+                    <p class="text-[16px] leading-[100%] mb-[20px]">700 руб – 20% = </p>
+                    <h5 class="font-black text-[42px] leading-6">560 <span class="text-[24px]">руб!</span></h5>
+                  </div>
+                </div>
+              </div>
+
+              <div class="swiper-slide" style="height: 250px;">
+                <div class="w-[842px] h-[176px] rounded-md mx-auto flex shadow-sales-shadow">
+                  <div class="bg-[#FF3939] rounded-l-md flex items-center justify-center text-[#2D2D2D]">
+                    <p class="rotate-[-90deg] font-black text-[32px] leading-[48px]">-30%</p>
+                  </div>
+                  <div class="w-[603px] flex items-center bg-white pl-12 pr-[10px]">
+                    <div class="mr-[42px]">
+                      <img src="./assets/img/slider-1/slide-4.png" alt="slide">
+                    </div>
+                    <h4 class="font-black text-[27px] leading-[32px] text-[#2D2D2D]">Заглушка паза <br> штапика в нижнюю
+                      раму</h4>
+                  </div>
+                  <div
+                    class="w-[171px] bg-[#2F6DCE] rounded-r-md flex flex-col justify-center text-center text-white pl-[19px] pr-[20px]">
+                    <p class="text-[16px] leading-[100%] mb-[20px]">150 руб – 30% = </p>
+                    <h5 class="font-black text-[42px] leading-6">100 <span class="text-[24px]">руб!</span></h5>
+                  </div>
+                </div>
+              </div>
+
+            </div>
+
+            <!-- <div class="swiper-pagination"></div> -->
+
+            <div class="font-roboto w-full flex pb-[50px]">
+              <div class="flex gap-x-6 mx-auto">
+                <div
+                  class="w-[68px] h-[46px] rounded-md text-white cursor-pointer bg-[#FF3939] border border-transparent hover:bg-[#d22f2f] shadow-paginate-shadow flex items-center justify-center font-bold text-[18px] leading-[21px]">
+                  -10%
+                </div>
+
+                <div
+                  class="w-[68px] h-[46px] rounded-md text-white cursor-pointer bg-[#FF3939] border border-transparent hover:bg-[#d22f2f] shadow-paginate-shadow flex items-center justify-center font-bold text-[18px] leading-[21px]">
+                  -15%
+                </div>
+
+                <div
+                  class="w-[68px] h-[46px] rounded-md text-white cursor-pointer bg-[#FF3939] border border-transparent hover:bg-[#d22f2f] shadow-paginate-shadow flex items-center justify-center font-bold text-[18px] leading-[21px]">
+                  -20%
+                </div>
+
+                <div
+                  class="w-[68px] h-[46px] rounded-md text-white cursor-pointer bg-[#FF3939] border border-transparent hover:bg-[#d22f2f] shadow-paginate-shadow flex items-center justify-center font-bold text-[18px] leading-[21px]">
+                  -35%
+                </div>
+
+              </div>
+
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="py-[90px]">
+      <div class="container mx-auto">
+
+        <div class="w-[928px] py-[8px] pl-[30px] bg-[#2F6DCE] rounded-md mb-[56px]">
+          <h3 class="font-black text-[32px] leading-[40px] text-white">КОМПЛЕКСНАЯ ПОДГОТОВКА ОКОН К ЗИМЕ</h3>
+        </div>
+
+        <div class="flex mb-[55px]">
+
+          <div class="mr-[78px]">
+
+            <div class="w-[333px] pt-[28px] px-[18px] pb-[20px] bg-[#E8F6FF] rounded-md font-roboto mb-[18px]">
+              <h5 class="font-black text-[24px] leading-6 text-[#2D2D2D] text-center mb-[20px]">Что входит в услугу?
+              </h5>
+              <ul>
+                <li class="flex items-start text-[16px] leading-6 text-[#2d2d2d]">
+                  <img src="./assets/img/icons/success.svg" class="mr-[7px] mt-[4px]" alt="success">Замена уплотнителя
+                  на створке и раме;
+                </li>
+                <li class="flex items-start text-[16px] leading-6 text-[#2d2d2d]">
+                  <img src="./assets/img/icons/success.svg" class="mr-[7px] mt-[4px]" alt="success">Настройка работы
+                  фурнитуры,
+                </li>
+                <li class="flex items-start text-[16px] leading-6 text-[#2d2d2d]">
+                  <img src="./assets/img/icons/success.svg" class="mr-[7px] mt-[4px]" alt="success">мелкий ремонт, не
+                  требующий замены деталей;
+                </li>
+                <li class="flex items-start text-[16px] leading-6 text-[#2d2d2d]">
+                  <img src="./assets/img/icons/success.svg" class="mr-[7px] mt-[4px]" alt="success">Смазка фурнитуры,
+                  протяжка винтов и креплений;
+                </li>
+                <li class="flex items-start text-[16px] leading-6 text-[#2d2d2d]">
+                  <img src="./assets/img/icons/success.svg" class="mr-[7px] mt-[4px]" alt="success">Установка
+                  оптимального прижима створки;
+                </li>
+                <li class="flex items-start text-[16px] leading-6 text-[#2d2d2d]">
+                  <img src="./assets/img/icons/success.svg" class="mr-[7px] mt-[4px]" alt="success">Правильная
+                  расстановка ответных планок;
+
+                </li>
+                <li class="flex items-start text-[16px] leading-6 text-[#2d2d2d]">
+                  <img src="./assets/img/icons/success.svg" class="mr-[7px] mt-[4px]" alt="success">Исправление
+                  геометрического провисания створки;
+                </li>
+                <li class="flex items-start text-[16px] leading-6 text-[#2d2d2d]">
+                  <img src="./assets/img/icons/success.svg" class="mr-[7px] mt-[4px]" alt="success">Увеличенная
+                  гарантия: 12 месяцев.
+                </li>
+              </ul>
+            </div>
+
+            <div
+              class="w-[333px] pt-[28px] px-[18px] pb-[20px] border-[6px] border-[#2F6DCE] rounded-md font-roboto mb-[18px]">
+              <h5 class="font-black text-[24px] leading-6 text-[#2D2D2D] text-center mb-[20px]">Сколько стоит?
+              </h5>
+              <ul>
+                <li class="flex items-start text-[16px] leading-6 text-[#484848]"><img
+                    src="./assets/img/icons/check.svg" class="mt-[5px] mr-[6px]" alt="success">Створка ПВХ <br> (S=
+                  0,5м²– 0,9м²
+                  -1,1м²)</li>
+                <li class="flex items-start text-[16px] leading-6 text-[#484848]"><img
+                    src="./assets/img/icons/check.svg" class="mt-[5px] mr-[6px]" alt="success">Черный уплотнитель <br>
+                  1000 – 1700 – 1900 руб.
+                </li>
+                <li class="flex items-start text-[16px] leading-6 text-[#484848]"><img
+                    src="./assets/img/icons/check.svg" class="mt-[5px] mr-[6px]" alt="success">Белый/Серый уплотнитель
+                  <br>
+                  1150 – 1850 – 2050 руб.
+                </li>
+                <li class="flex items-start text-[16px] leading-6 text-[#484848]"><img
+                    src="./assets/img/icons/check.svg" class="mt-[5px] mr-[6px]" alt="success">Белый/Балконная дверь ПВХ
+                  <br>
+                  ( S= 1,1м² – 1,4 м² - 1,7м²)
+                </li>
+                <li class="flex items-start text-[16px] leading-6 text-[#484848]"><img
+                    src="./assets/img/icons/check.svg" class="mt-[5px] mr-[6px]" alt="success">Белый/Черный уплотнитель
+                  <br>
+                  2000 – 2500 – 3000 руб.
+                </li>
+                <li class="flex items-start text-[16px] leading-6 text-[#484848]"><img
+                    src="./assets/img/icons/check.svg" class="mt-[5px] mr-[6px]" alt="success">Белый/Серый
+                  уплотнитель <br>
+                  2150 – 2650 – 3300 руб.
+                </li>
+              </ul>
+            </div>
+          </div>
+
+          <div class="w-full">
+            <div class="mb-[30px] w-full h-[413px]">
+              <img src="./assets/img/specialist.jpg" class="object-cover" alt="specialist">
+            </div>
+            <h5 class="font-black text-[24px] leading-6 mb-[18px] font-roboto">Подробнее о комплексном обслуживании:
+            </h5>
+            <ul class="font-roboto text-[18px] leading-6 text-[#2d2d2d] mb-[84px]">
+              <li>
+                • Самая популярная услуга по восстановлению оконных створок и дверей, включает полный перечень работ для
+                восстановления заводских характеристик и даже сделать их лучше;
+              </li>
+              <li>
+                • Рекомендуем устанавливать серый или белый уплотнитель, даже если на окнах стоит черный, т.к. у него
+                больше срок службы и выше качество. Также, створки приобретают более приятный внешний вид;
+              </li>
+              <li>
+                • При комплексном обслуживании на регулировку даем увеличенную гарантию 12 мес.
+              </li>
+            </ul>
+
+            <div class="text-center font-roboto">
+              <button
+                class="px-[51px] py-[24px] rounded-full text-[22px] leading-[100%] text-white uppercase hover:shadow-button-shadow duration-200 ease-out mb-[18px]"
+                style="background: linear-gradient(180deg, rgba(255, 255, 255, 0.3) 0%, rgba(255, 255, 255, 0) 100%), #005AE9;;">выезд
+                мастера</button>
+              <p class="font-light text-[12px] leading-[18px]">*Диагностика бесплатно (при условии проведения работ).
+                <br>
+                Выезд в пригород и удаленные районы оплачиваются по тарифам организации.
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <div class="w-full min-h-[435px] bg-[#f9f9f9] rounded-md pt-[50px] pb-[54px] font-roboto">
+          <h2 class="mb-[33px] text-center text-[32px] leading-[48px] font-black uppercase text-[#2F6DCE]">Вместе с
+            Зимником
+            дешевле!</h2>
+          <div class="swiper mySwiper">
+            <div class="swiper-wrapper">
+
+              <div class="swiper-slide" style="height: 250px;">
+                <div class="w-[842px] h-[176px] rounded-md mx-auto flex shadow-sales-shadow">
+                  <div class="bg-[#FF3939] rounded-l-md flex items-center justify-center text-[#2D2D2D]">
+                    <p class="rotate-[-90deg] font-black text-[32px] leading-[48px]">-10%</p>
+                  </div>
+                  <div class="w-[603px] flex items-center bg-white pl-12">
+                    <div class="mr-[42px]">
+                      <img src="./assets/img/slider-1/slide-1.png" alt="slide">
+                    </div>
+                    <h4 class="font-black text-[27px] leading-[32px] text-[#2D2D2D]">При обслуживании <span
+                        class="text-[#2F6DCE]">4х</span> <br>
+                      и более створок скидка</h4>
+                  </div>
+                  <div
+                    class="w-[171px] bg-[#2F6DCE] rounded-r-md flex flex-col justify-center items-center text-center text-white pl-[26px] pr-[20px]">
+                    <!-- <p class="text-[16px] leading-[100%] mb-[20px]">700 руб – 20% = </p> -->
+                    <h5 class="font-black text-[65px] leading-[76px]">-10<span class="text-[35px]">%</span></h5>
+                  </div>
+                </div>
+              </div>
+
+              <div class="swiper-slide" style="height: 250px;">
+                <div class="w-[842px] h-[176px] rounded-md mx-auto flex shadow-sales-shadow">
+                  <div class="bg-[#FF3939] rounded-l-md flex items-center justify-center text-[#2D2D2D]">
+                    <p class="rotate-[-90deg] font-black text-[32px] leading-[48px]">-15%</p>
+                  </div>
+                  <div class="w-[603px] flex items-center bg-white pl-12 pr-3">
+                    <div class="mr-[42px]">
+                      <img src="./assets/img/slider-1/slide-2.png" alt="slide">
+                    </div>
+                    <h4 class="font-black text-[26px] leading-[32px] text-[#2D2D2D]">Гребенка для фиксации <br>
+                      приоткрытой створки</h4>
+                  </div>
+                  <div
+                    class="w-[171px] bg-[#2F6DCE] rounded-r-md flex flex-col justify-center text-center text-white pl-[19px] pr-[20px]">
+                    <p class="text-[16px] leading-[100%] mb-[20px]">350 руб – 15% = </p>
+                    <h5 class="font-black text-[42px] leading-6">297 <span class="text-[24px]">руб!</span></h5>
+                  </div>
+                </div>
+              </div>
+
+              <div class="swiper-slide" style="height: 250px;">
+                <div class="w-[842px] h-[176px] rounded-md mx-auto flex shadow-sales-shadow">
+                  <div class="bg-[#FF3939] rounded-l-md flex items-center justify-center text-[#2D2D2D]">
+                    <p class="rotate-[-90deg] font-black text-[32px] leading-[48px]">-20%</p>
+                  </div>
+                  <div class="w-[603px] flex items-center bg-white pl-12 pr-[124px]">
+                    <div class="mr-[42px]">
+                      <img src="./assets/img/slider-1/slide-3.png" alt="slide">
+                    </div>
+                    <h4 class="font-black text-[32px] leading-[40px] text-[#2D2D2D]">Детские <br> блокираторы</h4>
+                  </div>
+                  <div
+                    class="w-[171px] bg-[#2F6DCE] rounded-r-md flex flex-col justify-center text-center text-white pl-[14px] pr-[20px]">
+                    <p class="text-[16px] leading-[100%] mb-[20px]">700 руб – 20% = </p>
+                    <h5 class="font-black text-[42px] leading-6">560 <span class="text-[24px]">руб!</span></h5>
+                  </div>
+                </div>
+              </div>
+
+              <div class="swiper-slide" style="height: 250px;">
+                <div class="w-[842px] h-[176px] rounded-md mx-auto flex shadow-sales-shadow">
+                  <div class="bg-[#FF3939] rounded-l-md flex items-center justify-center text-[#2D2D2D]">
+                    <p class="rotate-[-90deg] font-black text-[32px] leading-[48px]">-30%</p>
+                  </div>
+                  <div class="w-[603px] flex items-center bg-white pl-12 pr-[10px]">
+                    <div class="mr-[42px]">
+                      <img src="./assets/img/slider-1/slide-4.png" alt="slide">
+                    </div>
+                    <h4 class="font-black text-[27px] leading-[32px] text-[#2D2D2D]">Заглушка паза <br> штапика в нижнюю
+                      раму</h4>
+                  </div>
+                  <div
+                    class="w-[171px] bg-[#2F6DCE] rounded-r-md flex flex-col justify-center text-center text-white pl-[19px] pr-[20px]">
+                    <p class="text-[16px] leading-[100%] mb-[20px]">150 руб – 30% = </p>
+                    <h5 class="font-black text-[42px] leading-6">100 <span class="text-[24px]">руб!</span></h5>
+                  </div>
+                </div>
+              </div>
+
+            </div>
+
+            <!-- <div class="swiper-pagination"></div> -->
+
+            <div class="font-roboto w-full flex pb-[50px]">
+              <div class="flex gap-x-6 mx-auto">
+                <div
+                  class="w-[68px] h-[46px] rounded-md text-white cursor-pointer bg-[#FF3939] border border-transparent hover:bg-[#d22f2f] shadow-paginate-shadow flex items-center justify-center font-bold text-[18px] leading-[21px]">
+                  -10%
+                </div>
+
+                <div
+                  class="w-[68px] h-[46px] rounded-md text-white cursor-pointer bg-[#FF3939] border border-transparent hover:bg-[#d22f2f] shadow-paginate-shadow flex items-center justify-center font-bold text-[18px] leading-[21px]">
+                  -15%
+                </div>
+
+                <div
+                  class="w-[68px] h-[46px] rounded-md text-white cursor-pointer bg-[#FF3939] border border-transparent hover:bg-[#d22f2f] shadow-paginate-shadow flex items-center justify-center font-bold text-[18px] leading-[21px]">
+                  -20%
+                </div>
+
+                <div
+                  class="w-[68px] h-[46px] rounded-md text-white cursor-pointer bg-[#FF3939] border border-transparent hover:bg-[#d22f2f] shadow-paginate-shadow flex items-center justify-center font-bold text-[18px] leading-[21px]">
+                  -35%
+                </div>
+
+              </div>
+
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="py-[90px] font-roboto"
+      style="background: linear-gradient(180deg, rgba(255, 255, 255, 0) 80.8%, #FFFFFF 97.88%), #E8F6FF;">
+      <div class="container mx-auto">
+        <div class="w-[928px] py-[8px] pr-[30px] bg-[#2F6DCE] rounded-md mb-[56px] ml-auto">
+          <h3 class="font-black text-right text-[32px] leading-[40px] text-white uppercase">ПРИТОЧНЫЕ КЛАПАНЫ НА ОКНА
+            AIR-BOX</h3>
+        </div>
+
+        <div class="flex justify-between items-center mb-[81px]">
+          <div class="w-[630px]">
+            <img src="./assets/img/layers.jpg" alt="layers">
+          </div>
+          <div class="w-[630px]">
+            <p class="text-[22px] leading-[28px] text-[#2D2D2D] mb-[27px]"><span class="font-black">Аir-Box</span> –
+              призваны
+              обеспечить нормальный воздухообмен в квартирах, домах и офисах, оборудованных герметичными современными
+              окнами.</p>
+
+            <div class="flex items-center mb-[22px]">
+              <div class="mr-[15px]">
+                <img src="./assets/img/icons/not.svg" alt="icon">
+              </div>
+              <p class="text-[16px] leading-[100%]">затхлый воздух, повышенная влажность, появление плесени и грибка на
+                окнах и стенах.</p>
+            </div>
+
+            <div class="flex items-center mb-[22px]">
+              <div class="mr-[15px]">
+                <img src="./assets/img/icons/checked.png" alt="icon">
+              </div>
+              <p class="text-[16px] leading-[100%]">не надо открывать окна, что исключает попадание шума, пыли, резкие
+                перепады температур.</p>
+            </div>
+
+            <div class="flex items-center">
+              <div class="mr-[15px]">
+                <img src="./assets/img/icons/shit.svg" alt="icon">
+              </div>
+              <p class="text-[16px] leading-[100%]">Гарантия: 12 месяцев.</p>
+            </div>
+          </div>
+        </div>
+
+        <h3 class="text-center font-black text-[24px] leading-6 mb-[68px]">ПОДБЕРЕМ ОПТИМАЛЬНЫЙ ВАРИАНТ ДЛЯ ВАС!</h3>
+
+        <div>
+          <div class="w-[386px] h-[258px] bg-white rounded-md pt-[32px] px-[21px] pb-[20px] text-center">
+            <h4 class="font-bold text-[20px] leading-6 mb-[21px]">Air-Box Comfort</h4>
+            <p class="text-[16px] leading-[20px] text-[#6F6F6F] mb-[10px]">Установка на створку окна, без фрезеровки.
+              Расход воздуха до 31 м3/час, плавная ручная регулировка, размеры 350x42,5x8,5/20,5 мм, цвет
+              белый/коричневый.</p>
+            <h5 class="font-bold text-[26px] leading-[32px] text-[#2F6DCE]">1500 руб.</h5>
+            <p class="text-[14px] leading-[20px] text-[#6F6F6F]">(с монтажом)</p>
+          </div>
+        </div>
+
+      </div>
+    </section>
+  </main>
+
+  <!-- Swiper JS -->
+  <script src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js"></script>
+  <script src="./js/main.js"></script>
+</body>
+
+</html>
