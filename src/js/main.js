@@ -3,14 +3,9 @@ let swiper = new Swiper(".mySwiper", {
   autoplay: {
     delay: 3000,
   },
-  pagination: {
-    el: ".sales-pagination",
-    type: "bullets",
-    bulletElement: "div",
-    clickable: true,
-    renderBullet: function (index, className) {
-      return '<span class="' + className + '">' + (index + 1) + "</span>";
-    },
+  navigation: {
+    nextEl: '.mySwiper-next',
+    prevEl: '.mySwiper-prev',
   },
 });
 
@@ -19,14 +14,9 @@ let salesSwiper = new Swiper(".salesSwiper", {
   autoplay: {
     delay: 3000,
   },
-  pagination: {
-    el: ".sales-pagination",
-    type: "bullets",
-    bulletElement: "div",
-    clickable: true,
-    renderBullet: function (index, className) {
-      return '<span class="' + className + '">' + (index + 1) + "</span>";
-    },
+  navigation: {
+    nextEl: '.salesSwiper-next',
+    prevEl: '.salesSwiper-prev',
   },
 });
 
@@ -35,27 +25,27 @@ let salesSwiperSecond = new Swiper(".salesSwiperSecond", {
   autoplay: {
     delay: 3000,
   },
-  pagination: {
-    el: ".sales-pagination",
-    type: "bullets",
-    bulletElement: "div",
-    clickable: true,
-    renderBullet: function (index, className) {
-      return '<span class="' + className + '">' + (index + 1) + "</span>";
-    },
+  navigation: {
+    nextEl: '.salesSwiperSecond-next',
+    prevEl: '.salesSwiperSecond-prev',
   },
 });
 
 let swiperGrid = new Swiper(".gridSwiper", {
+  loop: true,
   autoplay: {
     delay: 3000,
   },
+  navigation: {
+    nextEl: '.gridSwiper-next',
+    prevEl: '.gridSwiper-prev',
+  },
+  pagination: {
+    el: '.swiper-pagination',
+    type: 'bullets',
+  },
   slidesPerView: 3,
   spaceBetween: 30,
-  pagination: {
-    el: ".swiper-pagination",
-    clickable: true,
-  },
   breakpoints: {
     320: {
       slidesPerView: 1,
